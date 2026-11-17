@@ -12,15 +12,19 @@ Baixe e instale a versão LTS do Node.js.
 
 ### 2. Baixar e abrir o projeto
 
-Baixe o projeto pelo GitHub em Code > Download ZIP, extraia a pasta e abra no VS Code em Arquivo →> Abrir Pasta.
+Acesse o repositório no GitHub:
 
-### 5. Abrir o terminal
+https://github.com/yothuany/blockchain-aula1-thauany
+
+Clique em **Code → Download ZIP**, extraia a pasta e abra o projeto no VS Code em **Arquivo → Abrir Pasta**.
+
+### 3. Abrir o terminal
 
 No VS Code, clique em:
 
-**Terminal > Novo Terminal**
+**Terminal → Novo Terminal**
 
-### 6. Verificar a instalação do Node.js
+### 4. Verificar a instalação do Node.js
 
 No terminal, digite:
 
@@ -30,7 +34,7 @@ node -v
 
 Se aparecer o número da versão instalada, o Node.js está funcionando.
 
-### 7. Executar o programa
+### 5. Executar o programa
 
 No terminal, digite:
 
@@ -40,24 +44,28 @@ node principal.js
 
 Pressione Enter para executar.
 
+Não é necessário instalar bibliotecas adicionais, pois o projeto utiliza o módulo `crypto`, que já vem com o Node.js.
 
-### 8. Conferir os resultados
+### 6. Conferir os resultados
+
+Durante a execução, o programa realiza:
 
 - Cadastro de três entregas.
+- Impressão dos blocos e seus hashes.
 - Verificação da validade da cadeia.
-- Tentativa de cadastro com dados inválidos.
+- Tentativa de cadastro de dados inválidos.
 - Simulação de adulteração de uma entrega antiga.
 - Nova verificação da cadeia após a adulteração.
 
 ### Resultados esperados
 
-Antes da adulteração:
+**Antes da adulteração:**
 
 ```text
 A cadeia é válida? true
 ```
 
-Após a adulteração:
+**Após a adulteração:**
 
 ```text
 A cadeia é válida após a adulteração? false
